@@ -1,0 +1,2870 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+.container{
+    max-width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* ----------------header start--------------- */
+
+header{
+   background: #232536;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+}
+
+nav>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+
+}
+
+nav>div>ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+   
+}
+nav>div>ul>li{
+  padding: 28px 0;
+  position: relative;
+  transition: all 0.2s linear;
+ }
+
+ nav>div>ul>li:not(.card1--li)::before{
+  content: "";
+  height: 3px;
+  width: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  transition: all 0.2s linear;
+
+ }
+
+ nav>div>ul>li:not(.card1--li):hover::before{
+  cursor: pointer;
+  transition: all 0.2s linear;
+  width: 100%;
+  background-color: #ffa155;
+ }
+
+nav>div>ul>li>a{
+color: #FFF;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px;
+opacity: 0.6;
+transition: all 0.2s linear;
+}
+
+nav>div>ul>li>a:hover{
+    color: #FFD3AF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    transition: all 0.2s linear;
+    }
+
+.card1--li{
+  position: relative;
+}
+.card1--li::after{
+  content: "→";
+  position: absolute;
+  color: #FFF;
+  right: -10px;
+  opacity: 0;
+  transition: all 0.2s linear;
+
+}
+.card1--li:hover::after{
+  right: -20px;
+  opacity: 1;
+  transition: all 0.2s linear;
+}
+
+/* .card1--li--a{
+    grid-row-end: 8px;
+    color: var(--secondary-orange, #FFD3AF);
+} */
+
+/* ----------------header start--------------- */
+
+/* ----------------card1 start--------------- */
+ .card1{
+    background: #FFE6D2;
+ }
+
+ .card1--div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .card1--div--div{
+    width: 622px;
+ }
+ .card1--div--div>h5{
+    color: var(--Dark, #232536);
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px;
+letter-spacing: 3px;
+text-transform: uppercase;
+margin-top: 96px;
+}
+.card1--div--div>h1{
+    color: #232536;
+font-family: Poppins;
+font-size: 48px;
+font-style: normal;
+font-weight: 600;
+line-height: 58px; 
+margin-top: 12px;
+margin-bottom: 24px;
+}
+
+.card1--div--div>p{
+    color: var(--Dark, #232536);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    opacity: 0.6;
+    margin-bottom: 40px;
+}
+.card1--div--div>button{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    width: 231px;
+    height: 64px;
+    background: linear-gradient(180deg, #444CFC 0%, #444CFC 100%);
+    margin-bottom: 96px;
+    border:none;
+    gap: 12px;
+    position: relative;
+    padding: 20px 32px;
+    
+}
+.card1--button--img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.card1--button--svg{
+    position: absolute;
+    bottom: 45%;
+    right: 0;
+}
+
+.card1--div--div>button>p{
+    color: #FFF;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; 
+}
+
+.card1--div>ul>li>a{
+    color: #232536;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: 36px; 
+margin-bottom: 17px;
+}
+
+.card1--div>ul>li{
+    margin-bottom: 17px;
+}
+
+
+
+ /* ----------------card1 end--------------- */
+
+ 
+/* -------------------  PROCESS SECTION START ---------------- */
+
+#process{
+    background: #F9F9FF;
+   
+}
+.progres {
+    padding-bottom: 68px;
+  }
+  
+  .progres__text {
+    padding-top: 96px;
+    width: 723px;
+  }
+  
+  .progres__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  
+  .progres__svg {
+    cursor: pointer;
+  }
+  
+  .progres h6 {
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  
+  .progres h2 {
+    color: #232536;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 58px; /* 120.833% */
+    margin-bottom: 16px;
+  }
+  
+  .progres p {
+    color: #232536;
+    width: 642px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  
+  .progres__cards{
+  padding-bottom: 01px;
+  }
+  .intro-ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-bottom: 96px;
+   
+  }
+  
+  .intro-ul--li {
+    width: 375px;
+    height: 164px;
+    border: 1px solid rgba(35, 37, 54, 0.17);
+    display: flex;
+    align-items: center;
+    padding: 32px;
+    gap: 16px;
+    position: relative;
+  }
+  
+  .intro-ul--li .circle {
+    background-color: rgba(255, 211, 175, 0.17);
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .intro-ul--li-text h6 {
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    margin-bottom: 6px;
+  }
+  
+  .intro-ul--li-text p {
+    color: #232536;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    opacity: 0.6;
+  }
+  
+  .number {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    opacity: 0.2;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; /* 133.333% */
+  }
+  
+  .intro-ul--li:nth-child(2)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 48px;
+    border-bottom: 2px dashed #dadadd;
+    right: 100%;
+  }
+  
+  .intro-ul--li:nth-child(2)::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 48px;
+    border-bottom: 2px dashed #dadadd;
+    left: 100%;
+  }
+  
+  .intro-ul--li:nth-child(5)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 48px;
+    border-bottom: 2px dashed #dadadd;
+    right: 100%;
+  }
+  
+  .intro-ul--li:nth-child(5)::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 48px;
+    border-bottom: 2px dashed #dadadd;
+    left: 100%;
+  }
+  
+  .intro-ul--li .line-1 {
+    width: 100%;
+    display: flex;
+    height: 8px;
+    background-color: bisque;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    justify-content: space-between;
+  }
+  
+  .intro-ul--li .line-1 span:first-child {
+    background-color: #ffa155;
+    width: 102px;
+    height: 100%;
+  }
+  .intro-ul--li .line-1 span:last-child {
+    background-color: #444CFC;
+    width: 102px;
+    height: 100%;
+  }
+  
+  .intro-ul--li .line-2 {
+    width: 100%;
+    display: flex;
+    height: 8px;
+    background-color: bisque;
+    position: absolute;
+    left: 0;
+    top: 0;
+     justify-content: space-between;
+  }
+  
+  
+  .intro-ul--li .line-2 span:first-child {
+    background-color: #ffa155;
+    width: 102px;
+    height: 100%;
+  }
+  .intro-ul--li .line-2 span:last-child {
+    background-color: #444CFC;
+    width: 102px;
+    height: 100%;
+  }
+  
+  /* ------------------------- SERVICE PAGE STYLES ----------------- */
+
+  /* -------------card3 start ----------------- */
+.card3{
+    background: #FFF;
+}
+.card3--div{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 96px;
+}
+.card3--div>div{
+    width: 624px;
+}
+
+.card3--div>div>p:first-child{
+    color: #000;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: 36px;
+opacity: 0.87;
+margin-bottom: 16px;
+}
+.card3--div>div>h1{
+    color: #232536;
+font-family: Poppins;
+font-size: 36px;
+font-style: normal;
+font-weight: 600;
+line-height: 54px; 
+margin-bottom: 24px;
+}
+.card3--div>div>p:last-child{
+    color: #232536;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; 
+opacity: 0.6;
+}
+
+.card4{
+    background: #ECF8F9;
+}
+.card6{
+    background: #F9F9FF;
+}
+
+    /* -------------card3 end ----------------- */
+
+    .card8{
+        width: 1256px;
+        height: 333px;
+        background: var(--secondary-blue, #666DFF);
+        padding: 96px;
+        position: relative;
+    }
+
+    svg{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+.card8--div{
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+}
+
+.card8--div>div>p{
+    color: #FFF;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; 
+letter-spacing: 3px;
+text-transform: uppercase;
+margin-bottom: 13px;
+}
+.card8--div>div>h1{
+    color: #FFF;
+font-family: Poppins;
+font-size: 36px;
+font-style: normal;
+font-weight: 600;
+line-height: 54px;
+width: 488px; 
+}
+.card8--div2{
+    width: 454px;
+    height: 64px;
+    background: #FFF;
+    padding: 20px;
+}
+
+.input{
+    border: none;
+}
+
+/* ---------------card7 section start----------------- */
+
+
+#card8{
+  background: #fff;
+}
+
+.card8--div{
+  background: var(--secondary-blue, #666DFF);
+  width: 1256px;
+  height: 333px;
+  margin-bottom: 96px;
+  position: relative;
+}
+
+.card8--div--img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card8--div--div{
+  display: flex;
+  gap: 122px;
+  align-items: center;
+  padding: 96px ;
+  
+}
+
+.card8--div--div--div--p{
+color: #FFF;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px;
+letter-spacing: 3px;
+text-transform: uppercase;
+margin-bottom: 13px;
+margin-bottom: 12px;
+}
+ 
+.card8--div--div--div--h1{
+color: #FFF;
+font-family: Poppins;
+font-size: 36px;
+font-style: normal;
+font-weight: 600;
+line-height: 54px;
+width: 488px;
+}
+
+.card8--div--div-div>input{
+
+  color: #232536;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  width: 454px;
+  height: 64px;
+  background: #FFF;
+  border: none;
+  padding: 10px 20px;
+}
+
+ /* .card8--div--div--div--p2{
+  width: 454px;
+  height: 64px;
+  background: #ffffff;
+  padding: 20px 262px 20px 29px;
+  color: hsla(234, 21%, 17%, 0.4);
+}  */
+
+
+/* ---------------card7 section end----------------- */
+
+
+
+/* ---------------card8 section start----------------- */
+.card9{
+  background: #fff;
+ 
+}
+
+
+.card9--div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.card9--div--div--h1{
+  color: #232536;
+font-family: Poppins;
+font-size: 48px;
+font-style: normal;
+font-weight: 600;
+line-height: 58px; 
+width: 458px;
+height: 116px;
+margin-bottom: 40px;
+}
+
+.card9--div--div--h3{
+color: #232536;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: 36px; 
+margin-bottom: 28px;
+}
+
+.card9--div--div--p{
+color: #232536;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 28px;
+}
+
+.card9--div--div--p2{
+  color: #232536;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px;
+ margin-top: 30px;
+ margin-bottom: 64px;
+}
+
+.card9--div--div2{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 60px;
+}
+.card9--ul>li{
+width: 87.407px;
+color: #232536;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 28px;
+margin-bottom: 12px;
+}
+
+.card9--ul2>li{
+color: #232536;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px;
+margin-bottom: 12px;
+}
+
+.card9--div--div2--p{
+color: #232536;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 28px; 
+margin-bottom: 12px;
+}
+/* ---------------card8 section end----------------- */
+
+
+
+
+/* ---------------Footer start start----------------- */
+#footer{
+  background: #FFE6D2;
+  height: 80px;
+  padding: 25px 0 30px;
+  margin-bottom: 96px;
+}
+
+.f--div{
+  display: flex;
+  justify-content: space-between;
+  align-items:baseline;
+}
+.f--div--div{
+  display: flex;
+  align-items: center;
+  gap: 42px;
+  
+}
+
+.f--div--div2{
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.f--div--div2>img:hover{
+  color: #444CFC;
+  background: #444CFC;
+}
+.f--div--div2>img:nth-child(3):hover{
+  background: red;
+}
+
+.f--div--div--h3{
+color: #000;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; 
+}
+
+
+
+/* ---------------Footer section end----------------- */
+
+
+
+
+/* ------------Compani card1 start------------- */
+
+#Company{
+  background: #fff;
+}
+.comp--div{
+  position: relative;
+}
+.comp--div>img{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.comp--div>p:nth-child(1){
+  width: 28px;
+height: 28px;
+transform: rotate(-90deg);
+background: #FFD3AF;
+margin-top: 96px;
+margin-bottom: 24px;
+}
+.comp--div>p:nth-child(2){
+  color: #000;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  opacity: 0.87;
+}
+
+.comp--div--p{
+  color: #232536;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.87;
+  height: 48px;
+ width: 719px;
+ margin-bottom: 64px;
+}
+
+.comp--div>h1{
+  color: #232536;
+font-family: Poppins;
+font-size: 48px;
+font-style: normal;
+font-weight: 600;
+line-height: 58px; 
+margin-top: 20px;
+margin-bottom: 24px;
+width: 664px;
+}
+
+.comp--div--div{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+
+}
+
+.comp--div--div>div{
+  position: absolute;
+  top: -24px;
+  left: 73.7%;
+  height: 24px;
+  width: 346px;
+  background: #FFD3AF;
+  display: flex;
+  justify-content: space-between;
+ 
+}
+.comp--div--div>div>span:nth-child(1){
+  width: 80px;
+  height: 24px;
+  background: #FFA155;
+}
+.comp--div--div>div>span:nth-child(3){
+  width: 50px;
+  height: 24px;
+  background: #444CFC;
+}
+/* ------------Compani card1 end------------- */
+
+
+/* ------------Compani card2 start------------- */
+.comp--card2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 96px;
+  margin-bottom: 94px;
+}
+
+.comp--card--div>p:nth-child(2){
+  color: #232536;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 28px; 
+margin-top: 16px;
+margin-bottom: 16px;
+
+}
+.comp--card--div>p:last-child{
+  color: #232536;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; 
+width: 550px;
+margin-top: 24px;
+}
+
+.comp--card--div>h1{
+  color: #232536;
+font-family: Poppins;
+font-size: 36px;
+font-style: normal;
+font-weight: 600;
+line-height: 54px;
+width: 549px;
+}
+.comp--card2--div2{
+  width: 624px;
+height: 368px;
+background: rgba(255, 211, 175, 0.57);
+padding: 62px 110px;
+display: flex;
+align-items: center;
+gap: 100px;
+}
+
+
+.comp--card2--div2>div>div>h1{
+  color: var(--Black, #232536);
+font-family: Poppins;
+font-size: 36px;
+font-style: normal;
+font-weight: 600;
+line-height: 54px; 
+}
+
+
+
+.comp--card2--div2>div>div>p{
+  color: var(--Black, #232536);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; 
+  opacity: 0.87;
+  margin-top: 16px;
+  margin-bottom: 30px;
+  position: relative;
+  
+}
+
+.comp--card2--div2>div>div{
+  position: relative;
+}
+.icon{
+  position: absolute;
+  left: 0;
+  bottom: 27px;
+}
+
+/* ------------Compani card2 end------------- */
+
+
+
+
+/* ------------Compani card3 start------------- */
+.comp--card3{
+  display: flex;
+  align-items: center;
+  background: #FAFAFC;
+  padding: 0 110px;
+  gap: 32px;
+  margin-bottom: 96px;
+}
+/* ------------Compani card3 end------------- */
+
+
+
+
+/* ------------Compani card4 start------------- */
+#expertise{
+  background: #ECF8F9;
+}
+
+.expertise__wrapper{
+  display: flex;
+  justify-content: space-between;
+  gap: 0 141;
+  margin-bottom: 104px;
+}
+
+.expertise__wrapper-p{
+color: #000;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; 
+letter-spacing: 3px;
+text-transform: uppercase;
+margin-top: 142px;
+}
+
+.expertise__wrapper-h1{
+color: #232536;
+font-family: Poppins;
+font-size: 48px;
+font-style: normal;
+font-weight: 600;
+line-height: 58px;
+margin-bottom: 24px; 
+}
+
+.expertise__wrapper-p2{
+color: #5D5F6D;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+margin-bottom: 154px;
+}
+.expertise__wrapper-ul{
+  margin-top: 112px;
+
+}
+
+.expertise__wrapper--ul--li{
+  display: flex;
+  justify-content: space-between;
+  background: #FFF;
+  width: 515px;
+  height: 140px;
+  margin-bottom: 12px;
+  padding: 32px;
+  gap: 0 16px;
+
+}
+.expertise__wrapper--ul--li--img{
+  width: 47px;
+  height: 47px;
+  background-color: #FFE6D2;
+  padding: 12px;
+  border-radius: 120px;
+ 
+}
+.expertise__wrapper--ul--li--div-h3{
+color: #000;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 28px; 
+margin-bottom: 8px;
+}
+.expertise__wrapper--ul--li--div-p{
+color: #5D5F6D;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; 
+}
+/* ------------Compani card4 end------------- */
+
+
+/* ------------Compani card5 start------------- */
+.comp-div5>h6{
+  color: #000;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; 
+letter-spacing: 3px;
+text-transform: uppercase;
+opacity: 0.87;
+}
+
+.comp-div5>h1{
+  color: #232536;
+font-family: Poppins;
+font-size: 36px;
+font-style: normal;
+font-weight: 600;
+line-height: 54px; 
+width: 701px;
+margin-top: 16px;
+margin-bottom: 24px;
+}
+.comp-div5>p{
+  color: #232536;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+width: 622px;
+opacity: 0.6;
+margin-bottom: 64px;
+}
+.comp-div5{
+  margin-bottom: 96px;
+}
+/* ------------Compani card5 end------------- */
+
+
+/* ------------Compani card5 end------------- */
+.comp--card6>h6{
+  color: #000;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 142.857% */
+letter-spacing: 3px;
+text-transform: uppercase;
+opacity: 0.87;
+}
+.comp--card6>h1{
+  color: #232536;
+font-family: Poppins;
+font-size: 48px;
+font-style: normal;
+font-weight: 600;
+line-height: 58px;
+width: 624px;
+margin-top: 16px;
+margin-bottom: 24px;
+}
+.comp--card6>p{
+  color: #232536;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+opacity: 0.87;
+width: 505px;
+margin-bottom: 64px;
+}
+.comp--card6>div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ------------Compani card5 end------------- */
+
+
+/* -----------------Home start-------------------- */
+
+/* ------------------- INTRO SECTION START-------------------- */
+
+#intro {
+  background-color: #232536;
+}
+
+.intro__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.intro__wrapper--text {
+  width: 624px;
+}
+
+.intro__wrapper--text h1 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 68px;
+  margin-bottom: 24px;
+}
+
+.intro__wrapper--text p {
+  color: rgb(255, 255, 255, 0.6);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 32px;
+}
+
+.intro__wrapper--text button {
+  width: 219px;
+  height: 64px;
+  background-color: #444cfc;
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.intro__wrapper--text button:hover {
+  background-color: rgb(68, 76, 252, 0.6);
+}
+
+.intro__wrapper-img {
+  margin-top: 96px;
+}
+
+.intro__brands {
+  padding: 0;
+  margin: 32px 0 33px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.intro__brand--item:first-child {
+  margin-top: -16px;
+}
+
+.intro__brand--item img:hover {
+  filter: hue-rotate(90deg);
+}
+
+.intro__brand--item h3 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+/* ------------------- INTRO SECTION END-------------------- */
+
+/* ------------------- ABOUT SECTION START------------------- */
+
+#about {
+  background-color: #fff;
+}
+
+.about__title {
+  color: #000;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.about__wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 92px;
+  margin-bottom: 48px;
+}
+
+.about__wrapper h1 {
+  color: #232536;
+  font-family: Poppins;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 58px;
+}
+
+.about__wrapper div h2 {
+  color: #232536;
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 54px;
+  margin-bottom: 16px;
+}
+.about__wrapper div p {
+  color: #5d5f6d;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.about__images {
+  display: flex;
+  gap: 11px;
+  margin-bottom: 48px;
+}
+
+.about__stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 98px;
+}
+
+.about__stat--list {
+  display: flex;
+  gap: 0 66px;
+}
+
+.about__stat--list li h4 {
+  color: #232536;
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 54px;
+}
+
+.about__stat--list li p {
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+/* ------------------- ABOUT SECTION END------------------- */
+/* -----------------Our Services section star------------ */
+#Services{
+  background-color: #FFE6D2;
+  padding: 96px 0  ;
+}
+.Service--p{
+  color: #000;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; 
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  opacity: 0.87;
+  margin-top: 96px;
+
+}
+.Service--h1{
+color: #232536;
+font-family: Poppins;
+font-size: 48px;
+font-style: normal;
+font-weight: 600;
+line-height: 58px;
+width: 777px;
+margin-top: 12px;
+}
+
+.Service--button{
+color: #FFF;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; 
+padding: 20px 32px;
+ background: linear-gradient(180deg, #444CFC 0%, #444CFC 100%);;
+ margin: 47px 0 68px;
+
+}
+.Service--div{
+  display: flex;
+  justify-content: space-between;  
+  gap: 32px;
+ 
+}
+
+
+ .Service--div--div{
+width: 405px;
+height: 335px;
+flex-shrink: 0;
+background: #FFF;
+box-shadow: 0px 60px 68px -30px rgba(255, 161, 85, 0.35);
+padding: 48px;
+
+ }
+.Service--div--div--img{
+  background-color: rgba(255, 161, 85, 0.10);
+  border-radius: 50%;
+  fill: rgba(255, 161, 85, 0.10);
+  padding: 12px;
+  margin-bottom: 16px;
+
+
+}
+
+.Service--div--div--h3{
+color: #000;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 28px;
+margin-bottom: 8px;
+}
+.Service--div--div--p{
+color: #5D5F6D;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+width: 326px;
+margin-bottom: 24px;
+}
+.Service--div--div--div{
+  display: flex;
+  gap: 12px;
+}
+.Service--div--div--div--p{
+color: #444CFC;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; 
+opacity: o.87;
+}
+
+/* -----------------Our Services section end------------ */
+/* ---------------card6 section start----------------- */
+
+#card6{
+  background: #F9F9FF;
+}
+.card6--div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 181px;
+
+}
+.card6--div--div--p{
+  width: 16px;
+height: 16px;
+background: #666DFF;
+margin-top: 102px;
+margin-bottom: 16px;
+}
+
+.card6--div--div--h1{
+width: 492px;
+color: #232536;
+font-family: Poppins;
+font-size: 48px;
+font-style: normal;
+font-weight: 600;
+line-height: 58px;
+margin-bottom: 16px;
+}
+.card6--div--div--h3{
+width: 502px;
+color: #232536;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 28px;
+margin-bottom: 16px;
+}
+
+.card6--div--div--p2{
+width: 492px;
+color: #232536;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+margin-bottom: 24px;
+}
+.card6--div--div--div{
+  gap: 12px;
+}
+
+.card6--div--div--h3-2{
+color: #000;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px;
+margin-top: 14px;
+margin-bottom: 119px;
+}
+
+.card6--div--div2{
+  width: 607px;
+  height: 340px;
+  background: #FFF;
+  padding: 40px;
+  position: relative;
+}
+
+.card6--div--div2--h2{
+width: 498px;
+height: 180px;
+color: #232536;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: 36px;
+margin-bottom: 24px;
+}
+
+.card6--div--div2--div{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+ 
+.card6--div--div2--div--div--h3{
+color: #232536;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 28px; 
+}
+
+.card6--div--div2--div--div--p{
+color: #232536;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; 
+}
+
+.card6--div--div2--div--img1{
+  width: 112.703px;
+  height: 25.576px;
+  position: absolute;
+  bottom: 42px;
+  right: 42px;
+
+}
+.card6--div--div2--div--img2{
+  width: 53px;
+  height: 12px;
+  position: absolute;
+  left: 45%;
+  bottom: -24px;
+}
+
+.card6--div--div2--div--img3{
+  width: 43px;
+  height: 30px;
+  position: absolute;
+  right: 40px;
+  top: -19px;
+ 
+}
+/* ---------------card6 section end----------------- */
+
+/* ---------------card7 section start----------------- */
+#card7{
+  background: #ECF8F9;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+.card7--p{
+  width: 16px;
+  height: 16px;
+  background: #666DFF;
+  margin-bottom: 19px;
+
+}
+.card7--h1{
+color: #232536;
+font-family: Poppins;
+font-size: 48px;
+font-style: normal;
+font-weight: 600;
+line-height: 58px; 
+margin-bottom: 48px;
+}
+.card7--div{
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  
+}
+
+.card7--div--div{
+  display: flex;
+  align-items: center;
+  background: #fff;
+  width: 624px;
+  height: 248px;
+  gap: 32px;
+}
+.card7--div--div--p{
+color: #232536;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; 
+opacity: 0.6;
+margin-bottom: 8px;
+}
+.card7--button{
+color: #444CFC;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; 
+opacity: 0.87;
+margin-top: 24px;
+gap: 12px;
+border: none;
+background: none;
+
+}
+
+/* ---------------card7 section end----------------- */
+
+/* --------------Career pang start  ----------------- */
+
+/* --------------card1 start  ----------------- */
+
+#career--card1{
+  background: #fff;
+  margin: 96px 0 ;
+}
+.career--card1--div{
+  text-align: center;
+  position: relative;
+}
+
+.career--card1--div>h6{
+  color: var(--Black, #232536);
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px;
+letter-spacing: 3px;
+text-transform: uppercase;
+opacity: 0.87;
+text-align: center;
+}
+
+.career--card1--div>h1{
+  color: var(--Black, #232536);
+font-family: Poppins;
+font-size: 48px;
+font-weight: 600;
+line-height: 58px;
+width: 624px;
+height: 174px;
+margin: 24px auto;
+text-align: center;
+
+}
+.career--card1--div>article{
+  color: var(--Black, #232536);
+text-align: center;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; 
+opacity: 0.87;
+width: 624px;
+height: 48px;
+margin: auto;
+}
+
+.career--card1--div--p2{
+  color: #232536;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 28px; 
+margin-bottom: 16px;
+margin-top: 51px;
+
+
+}
+.career--card1--div--img{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+
+/* ------ --------card1 end  -----------------*/
+
+/* ------ --------card2 start  -----------------*/
+
+#career--card2{
+  background:#ECF8F9 ;
+  width: 1280px;
+  margin: auto;
+  padding: 76px ;
+}
+
+
+
+.career--card2--div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.career--card2--div>div{
+  width: 354px;
+  height: 243px;
+  background: #fff;
+  padding: 48px;
+  margin-bottom: 22px;
+  position: relative;
+}
+.career--card2--div>div:hover{
+  transform: scale(1.04);
+  cursor: pointer;
+  transition: all 0.2s linear;
+  
+}
+.career--card2--div>div::after{
+  content: "";
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top:-48px;
+  right: -48000px;
+  background-image: url(./assyt/Company-img/Icon.svg) ;
+  background-repeat: no-repeat;
+  transition: all 0.1 linear;
+}
+.career--card2--div>div:hover:after{
+   top: 0;
+   right: 0;
+   transition: all 0.1 linear
+   
+   
+}
+
+.career--card2--div>div>h3{
+  color: var(--Black, #232536);
+font-size: 16px;
+font-weight: 600;
+line-height: 28px; 
+margin-bottom: 10px;
+font-family: Poppins;
+
+}
+
+.career--card2--div>div>p{
+color: var(--Black, #232536);
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+font-family: Poppins;
+}
+
+.career--card2--div>div>p:nth-child(3){
+  margin-bottom: 52px;
+}
+
+.career--card2--div>div>a{
+  color: var(--iris-100, #5D5FEF);
+  font-size: 16px;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: 24px; 
+  margin-top: 43px;
+  
+}
+/* ------ --------card2 end  -----------------*/
+
+/* ------ --------card3 start  -----------------*/
+
+
+#career--card3{
+  background: #FAFAFC;
+  padding: 96px 0 84px;
+  margin-bottom: 96px;
+}
+
+#career--card3>div>p{
+  color: #000;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; 
+letter-spacing: 3px;
+text-transform: uppercase;
+opacity: 0.87;
+}
+
+#career--card3>div>h1{
+color: #232536;
+font-family: Poppins;
+font-size: 36px;
+font-style: normal;
+font-weight: 600;
+line-height: 54px; 
+width: 624px;
+margin-top: 16px;
+margin-bottom: 24px;
+}
+
+#career--card3>div>article{
+color: #232536;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; 
+width: 622px;
+opacity: 0.6;
+}
+
+.career--card3--div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  gap: 12px;
+}
+
+
+.career--card3--div>div{
+  width: 419px;
+  height: 188px;
+  background: #FFF;
+  padding: 32px;
+}
+
+.career--card3--div>div:hover{
+  transform: scale(1.03);
+  cursor: pointer;
+  border-radius: 20px;
+  transition: all 0.2s linear;
+  background: #ffffffaf ;
+  
+}
+
+.career--card3--div>div>img{
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background:  rgba(255, 211, 175, 0.50);
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+
+.career--card3--div>div>h3{
+  color: var(--Black, #232536);
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 28px; 
+}
+
+.career--card3--div>div>p{
+  color: var(--Black, #232536);
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; 
+opacity: 0.6;
+}
+/* ------ --------card3 end  -----------------*/
+
+/* --------------Career pang end  ----------------- */
+
+
+/* --------------Career pang-inner start  ----------------- */
+/* --------------card1 start  ----------------- */
+#inner-card1{
+  background: #FFF;
+  margin: 96px auto;
+}
+
+.inner--card1{
+  display: flex;
+  gap: 56px;
+  align-items: center;
+}
+
+.iner--card1--div>h3{
+  color: var(--Black, #232536);
+font-family: Poppins;
+font-size: 14px;
+font-weight: 500;
+line-height: 20px; 
+letter-spacing: 3px;
+text-transform: uppercase;
+opacity: 0.87;
+margin-bottom: 24px;
+}
+.iner--card1--div>h1{
+  color: var(--Black, #232536);
+font-family: Poppins;
+font-size: 48px;
+font-style: normal;
+font-weight: 600;
+line-height: 58px; 
+}
+
+.iner--card1--div>p{
+  color: var(--Black, #232536);
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+opacity: o.87;
+width: 430px;
+margin-top: 16px;
+margin-bottom: 40px;
+}
+
+.iner--card1--div>button{
+  position: relative;
+  padding: 20px 32px;
+  background: blue;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  width: 182px;
+  height: 64px;
+}
+
+.iner--card1--div>button:hover{
+  background: rgba(4, 4, 204, 0.903);
+  cursor: pointer;
+  transform: scale(1.1) ;
+  border-radius: 5px;
+}
+
+.iner--card1--div>button>img{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.iner--card1--div2{
+  width: 515px;
+height: 324px;
+background: #FFE0C7;
+position: relative;
+padding: 82px 80px 78px;
+}
+.iner--card1--div2>img{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.iner--card1--div2>h2{
+  color: var(--Black, #232536);
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px; 
+  margin-bottom: 8px;
+}
+
+.iner--card1--div2>p{
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 16px;
+}
+
+
+/* --------------card1 end  ----------------- */
+
+/* --------------card2 start  ----------------- */
+#inner-card2{
+  width: 1280px;
+  background: #ECF8F9;
+  margin: auto;
+  
+}
+
+.inner-card2--ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 96px; 
+  border-bottom: 4px solid #E0F1F2;
+}
+
+.inner-card2--ul>li>a{
+  color: #000;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: 36px;
+transition: all 0.2s linear;
+}
+.inner-card2--ul>li{
+  padding: 43px 0 33px;
+  position: relative;
+  transition: all 0.2s linear;
+}
+.inner-card2--ul>li:hover a{
+  cursor: pointer;
+  color: #454DFD;
+  transition: all 0.2s linear;
+
+}
+
+.inner-card2--ul>li::before{
+   content: "";
+   width: 0;
+   height: 4px;
+   background-color: #454DFD;
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   transform: translate(-50%);
+   transition: all 0.2s linear;
+}
+
+.inner-card2--ul>li:hover::before{
+  cursor: pointer;
+  width: 100%;
+  background-color: #454DFD;
+  transition: all 0.2s linear;
+
+}
+
+
+/* --------------card2 end  ----------------- */
+
+
+/* --------------card3 start  ----------------- */
+.inner-card2--div{
+    padding: 96px 219px 96px 198px;
+    
+    
+}
+.inner-card2--div>p{
+  color: #000;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+margin-bottom: 2rem; 
+position: relative;
+}
+
+.inner-card2--div>h1{
+  width:7px;
+  height:7px;
+  background-color: #000;
+  border: 50%;
+  position: relative;
+  top: 15px;
+  left: -20px;
+  border-radius:100%;
+
+  
+}
+/* --------------card2 end  ----------------- */
+
+
+/* --------------card3 start  ----------------- */
+#inner--card3{
+  background: #FFF;
+  margin-top: 95px;
+  margin-bottom: 96px;
+}
+
+#inner--card3>div>h1{
+  color: #232536;
+font-family: Poppins;
+font-size: 36px;
+font-style: normal;
+font-weight: 600;
+line-height: 54px;
+margin-bottom: 29px;
+}
+.inner--card3--div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.inner--card3--div>input{
+  width: 624px;
+  height: 96px;
+  background: rgba(210, 218, 237, 0.17);
+  padding: 34px 40px;
+  border: none;
+}
+.inner--card3--div>input:hover{
+  transform: scale(1.03);
+  cursor:auto;
+  background: rgba(210, 218, 237, 0.30);
+}
+
+.inner--input{
+  width: 1280px;
+  height: 225px;
+  background: rgba(210, 218, 237, 0.17);
+  padding: 34px 40px;
+  border: none;
+}
+
+.inner--input:hover{
+  cursor:auto;
+  background: rgba(210, 218, 237, 0.30);
+}
+
+.inner--card3--div2{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
+.inner--card3--div2>p{
+  color: #000;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; 
+width: 842px;
+}
+.inner--card3--div2>input{
+  width: 36px;
+  height: 36px;
+}
+.inner--card3--button{
+ position: relative;
+ width: 251px;
+ height: 64px;
+ background: blue;
+ padding: 20px 32px;
+ border: none;
+ display: flex;
+ align-items: center;
+ color: #FFF;
+}
+.inner--card3--button:hover{
+  background: rgba(4, 4, 204, 0.903);
+  cursor: pointer;
+  transform: scale(1.1) ;
+  border-radius: 5px;
+}
+
+.inner--card3--button>img{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* --------------card3 end  ----------------- */
+
+/* --------------Career pang-inner end  ----------------- */
+
+
+
+
+/* --------------Blog Career pang  start ----------------- */
+
+/* --------------Blog card1 satrt  ----------------- */
+.blog{
+  display: flex;
+  align-items: start;
+  justify-content:space-between;
+  margin: 96px 0;
+}
+ .blog__div>p:nth-child(1){
+   width:24px;
+   height:24px;
+   background: #FFD3AF;
+ }
+
+ .blog__div>p:nth-child(2){
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-top: 24px;
+  opacity: 0.87;
+ }
+
+ .blog__div>h1{
+  width: 624px;
+  color: #232536;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+  margin: 24px 0;
+ }
+
+ .blog__div>article{
+  width: 624px;
+  color: #232536;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.87;
+  margin-bottom: 24px;
+ }
+
+ .blog__div>a{
+  color:  #444CFC;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px; 
+  opacity: 0.87;
+  margin-bottom: 40px;
+ }
+
+ .blog__div>a:hover{
+  cursor: pointer;
+  color: #2b32c2 ;
+  font-size: 18px;
+
+ }
+
+ .blog__div>div{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+ }
+
+ .blog__div>div>h6{
+    display: inline-block;
+    color: #232536;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; 
+    opacity: 0.87;
+ }
+ 
+ .blog__div>div>p{
+  color: #232536;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; 
+  opacity: 0.6;
+  margin: 40px 0;
+ }
+
+  .blog__div2{
+   padding: 72px 72px 20px;
+    background: #FFDFC6;
+    position: relative;
+  }
+
+  .blog__div2>img{
+     position: absolute;
+     top: 0;
+     right: 0;
+  }
+
+  .blog__div2>h3{
+    width: 366px;
+    color: #232536;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+  }
+
+  .blog__div2>div{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 24px auto 53px;
+  }
+
+  .blog__div2>div>div>h6{
+    color: #232536;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; 
+    opacity: 0.87
+  }
+
+   .blog__div2>div>div>p{
+    color: #232536;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px; 
+    opacity: 0.6;
+   }
+/* --------------------Blog card1 end ---------------------- */
+
+
+
+/* ---------------------Blog card2 start --------  ----------------- */
+.blog-card2>h1{
+  color: #232536;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+  margin-bottom: 64px;
+}
+
+.blog-post{
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.blog-post__div {
+  width: 624px;
+  height: 248px;
+  display: flex;
+  align-items: start;
+  background: #F9F9FF;
+  margin-bottom: 32px;
+
+}
+.blog-post__div>div>h2{
+  width: 264px;
+  color: #232536;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  margin-bottom: 34px;
+}
+
+.blog-post__div>div{
+  padding: 32px;
+}
+
+.blog-post__div>div>div{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.blog-post__div>div>div>div>h3{
+  color: #232536;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; 
+  opacity: 0.87;
+}
+
+.blog-post__div>div>div>div>p{
+  color: #232536;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px; 
+  opacity: 0.6;
+}
+
+
+/* -------------------Blog card2 end ---------- ----------------- */
+
+
+/* -------------------Blog card3 start ---------- ----------------- */
+ #blog-card3{
+  margin: 64px auto 96px;
+  padding: 96px 0 64px;
+  background: #F9F9F9;
+ }
+
+ .blog-card3>h1{
+  color: #232536;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+  margin-bottom: 64px;
+ }
+
+ .blog--card3{
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 32px;
+
+ }
+
+ .blog--card3>div{
+    background: #FFF;
+ }
+
+ .blog--card3>div>h2{
+  width: 341px;
+  color: #232536;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px; 
+  margin: 32px 32px 16px;
+ }
+
+ .blog--card3>div>p{
+  width: 341px;
+  color: #232536;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.87;
+  margin-left: 32px;
+  margin-right: 32px;
+ }
+
+ .blog--card3>div>div{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 24px 31px 32px;
+ }
+/* -------------------Blog card3 end ---------- ----------------- */
+/* --------------Blog pang end  ----------------- */
+
+
+
+/* --------------Blog-inner pang start  ----------------- */
+/* --------------Blog-iner card1 start  ----------------- */
+  .blog-inner{
+   margin: 96px 0;
+    position: relative;
+  }
+
+  .blog-inner>p{
+    width: 24px;
+    height: 24px;
+    background: #FFD3AF;
+  }
+
+  .blog-inner>h1{
+    width: 729px;
+    color: #232536;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58px;
+    margin: 24px 0;
+  }
+
+  .blog-inner>article{
+    width: 719px;
+    color: #232536;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 32px;
+  }
+
+  .blog-inner>img{
+      position: absolute;
+      top: 0;
+      right: 0;
+  }
+
+  .blog-i__div{
+     display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .blog-i__div>div>h3{
+    color: #232536;
+    font-size: 16px;
+    margin-right: 16px;
+    font-weight: 400;
+    line-height: 24px; 
+    opacity: 0.87;
+    display: inline;
+  }
+
+  .blog-i__div>div>p{
+    display: inline;
+    color: #232536;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    opacity: 0.6;
+  }
+  
+/* --------------Blog-iner card1 end  ----------------- */
+
+
+
+/* --------------Blog-iner card2 start  ----------------- */
+.blog-i-crd2{
+  margin: 96px 0;
+}
+.blog-i-card2>div{
+   margin: 0 219px 96px;
+}
+
+.blog-i-card2>div>p{
+  width: 836px;
+  color: #232536;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 24px 0;
+ 
+}
+
+.blog-i-card2>div>h1{
+  width: 842px;
+  color: #232536;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 54px;
+  margin-top: 96px;
+}
+
+.blog-i-card2>div>h2{
+  width: 842px;
+  color: #232536;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  margin-top: 16px;
+}
+
+.blog-i-card2>div>a{
+  color:  #444CFC;
+  
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px; 
+  opacity: 0.87;
+  padding-bottom: 60px;
+ }
+
+ .blog-i-card2>div>a:hover{
+  cursor: pointer;
+  color: #2b32c2 ;
+  font-size: 18px;
+
+ }
+
+
+/* --------------Blog-iner card2 end  ----------------- */
+
+/* --------------Blog-iner pang end  ----------------- */
+
+
+/* --------------Team template pang start  ----------------- */
+#team-t-card1{
+  padding: 96px 0;
+}
+
+.team-t-card1{ 
+  margin: 0 371px; 
+}
+
+.team-t-card1>img{
+  margin: 0 92.5px ;
+}
+
+.team-t-card1>h1{
+  color: var(--Text, #232536);
+  font-size: 36px;
+  text-align: center;
+  font-weight: 600;
+  line-height: 54px;
+  margin: 48px 0 8px;
+}
+
+.team-t-card1>h3{
+  color: var(--Text, #232536);
+  font-size: 14px;
+  text-align: center;
+  font-weight: 500;
+  line-height: 20px; 
+  opacity: 0.7;
+  margin-bottom: 24px;
+}
+
+.team-t-card1>p{
+  width: 505px;
+  color: #232536;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 34px;
+}
+
+.team-t-card1>ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+/* -------------Team template pang end   ----------------- */
+
+/* -------------Colum pang start   ----------------- */
+/* -------------Colum pang  card1 start   ----------------- */
+#Colune-card1{
+  background: #FFF;
+  padding: 96px 0 72px;
+
+}
+
+.colune__card1 p:nth-child(1){
+  width: 24px;
+  height: 24px;
+  background: #FFD3AF;
+  margin-bottom: 24px;
+}
+
+.colune__card1 p:nth-child(2){
+  color: #232536;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; 
+  opacity: 0.6;
+  margin-top: 8px;
+}
+
+.colune__card1 h1{
+  color: #232536;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px; 
+}
+
+.card-img{
+    position:relative;
+    
+}
+
+.colune__card1 img{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/* -------------Colum pang card1 end   ----------------- */
+
+/* -------------Colum pang card2 start   ----------------- */
+.colune__card2{
+  background: #ECF8F9;
+  padding: 96px 219.5px;
+  position: relative;
+  margin-bottom: 120px;
+}
+
+.colune__card2 img{
+   position: absolute;
+   left: 0;
+   bottom: -24px;
+}
+
+.colum__card2--div h1{
+  color: #232536;
+  font-family: Poppins;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 54px;
+  margin-bottom: 24px;
+}
+
+.colum__card2--div h2{
+  color: #232536;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  margin: 16px 0;
+}
+
+.colum__card2--div p{
+  color: #232536;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+/* -------------Colum pang card2 end   ----------------- */
+/* -------------Colum pang end   ----------------- */
+
+
+/* -------------Contact pang  start   ----------------- */
+/* -------------Contact pang card1 start   ----------------- */
+.contact__wrapper{
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 96px 0;
+}
+
+.contact__wrapper--left p:nth-child(1){
+  width: 24px;
+  height: 24px;
+  background: #FFD3AF;
+}
+
+.contact__wrapper--left p:nth-child(2){
+  color: #000;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px; 
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  opacity: 0.87;
+  margin: 24px 0;
+}
+
+.contact__wrapper--left h1 {
+  width: 672px;
+  color: #232536;
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+}
+
+.contact__wrapper--left p:nth-child(4){
+  width: 619px;
+  color: #232536;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.87;
+  margin: 24px 0 64px;
+}
+
+label>h6{
+  color: #232536;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  opacity: 0.6;
+}
+
+.contact__form--input{
+  color: #0000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+   padding: 8px ;
+   border: none;
+   border-bottom: 1px solid #9497ac;
+   margin-bottom: 24px;
+   width: 405px;
+}
+
+.contact__form--input4{
+   padding: 14px 8px 64px;
+   border: none;
+   border-bottom: 1px solid #9497ac;
+   width: 405px;
+}
+
+.contact__form--btn{
+    display: block;
+    margin-top: 54px;
+    padding: 20px 32px;
+    color: #FFF;
+    background: linear-gradient(180deg, #444CFC 0%, #444CFC 100%);
+    border: none;
+    position: relative;
+    transition: all 0.2 linear;
+}
+
+.contact__form--btn:hover{
+  cursor: pointer;
+  transition: all 0.2 linear;
+  transform: scale(1.03);
+  background: linear-gradient(180deg, #8186ee 0%, rgb(139, 144, 245) 100%);
+}
+.contact__form--btn>img{
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+.contact__wrapper--right{
+   padding: 83px 96px;
+   position: relative;
+   background: #666DFF;
+}
+
+.contact__wrapper--right>h5{
+   position: absolute;
+   bottom: 0;
+   left: -24px;
+   width: 24px;
+   height: 280px;
+}
+
+.contact__wrapper--right>h5>span:nth-child(1){
+   display: block;
+    width: 24px;
+    height: 65px;
+  background-color: #FFA155;
+}
+
+.contact__wrapper--right>h5>span:nth-child(2){
+  display: block;
+   width: 24px;
+   height: 150px;
+ background-color: #FFD3AF;
+}
+
+.contact__wrapper--right>h5>span:nth-child(3){
+  display: block;
+   width: 24px;
+   height: 65px;
+ background-color: #7a55ff;
+}
+
+.contact__wrapper--right>h6{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: -24px;
+  right: 0;
+  width: 140px;
+  height:24px;
+}
+
+.contact__wrapper--right>h6>span:nth-child(1){
+  display: block;
+   width: 45px;
+   height: 24px;
+ background-color: #FFD3AF;
+}
+
+.contact__wrapper--right>h6>span:nth-child(2){
+ display: block;
+  width: 25px;
+  height: 24px;
+background-color: #7a55ff;
+}
+
+.contact__wrapper--right>h6>span:nth-child(3){
+ display: block;
+  width: 70px;
+  height:24px;
+background-color: #FFA155;
+}
+
+.contact__wrapper--right h3{
+  color: #FFF;
+  font-family: Poppins;
+  width: 264px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  margin-top: 12px;
+}
+
+.contact__wrapper--right h4{
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; 
+  opacity: 0.6;
+}
+
+.contact__wrapper--right p{
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; 
+  opacity: 0.6;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  width: 268px;
+}
+
+.contact__wrapper--right div{
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  margin-top: 54px;
+}
+
+.carta{
+  margin-bottom: 96px;
+}
+/* -------------Contact pang card1 end   ----------------- */
+/* -------------Contact pang end end   ----------------- */
